@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>RMS2 Plans Receipt</title>
+<style type="text/css">
+@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+body {
+	Margin: 0!important;
+	padding: 15px;
+	background-color: #FFF;
+}
+.wrapper {
+	width: 100%;
+	table-layout: fixed;
+}
+.wrapper-inner {
+	width: 100%;
+	background-color: #eee;
+	max-width: 670px;
+	Margin: 0 auto;
+}
+
+.main-table-first {
+	width: 100%;
+	max-width: 610px;
+	Margin: 0 auto;
+	background-color: #01579b;
+}
+/*--- Start Two Column Sections --*/
+.two-column {
+    text-align: center;
+    font-size: 0;
+    padding: 5px 0 10px 0;
+}
+.two-column .section {
+    width: 100%;
+    max-width: 300px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+#callout {
+    float: right;
+    Margin: 4% 5% 2% 0;
+    height: auto;
+    /* overflow: hidden; */
+}
+#callout img {
+    max-width: 20px;
+}
+
+
+		img {
+			max-width: 100%;
+		}
+		body {
+			-webkit-font-smoothing: antialiased;
+			-webkit-text-size-adjust: none;
+			width: 100% !important;
+			height: 100%;
+			line-height: 1.6;
+		}
+        .header-shadow{
+                box-shadow: 0 2px 4px rgba(0,0,0,0.2), 0 -1px 0px rgba(0,0,0,0.02);
+            }
+		table td {
+			vertical-align: top;
+		}
+        .tbl-receipt-header{
+            font-weight: bold;
+            font-size: 2em;
+        }
+		body {
+			background-color: #f6f6f6;
+		}
+		.body-wrap {
+			background-color: #f6f6f6;
+			width: 100%;
+		}
+		.container {
+			display: block !important;
+			max-width: 600px !important;
+			margin: 0 auto !important;
+			clear: both !important;
+		}
+		.content {
+			max-width: 600px;
+			margin: 0 auto;
+			display: block;
+			padding: 20px;
+		}
+		.main {
+			background: #fff;
+			border: 1px solid #e9e9e9;
+			border-radius: 3px;
+		}
+		.content-wrap {
+			padding: 20px;
+		}
+		.content-block {
+			padding: 0 0 20px;
+		}
+		.header {
+			width: 100%;
+			margin-bottom: 20px;
+		}
+		.footer {
+			width: 100%;
+			clear: both;
+			color: #999;
+			padding: 20px;
+		}
+		.footer a {
+			color: #999;
+		}
+		.footer p,
+		.footer a,
+		.footer unsubscribe,
+		.footer td {
+			font-size: 12px;
+		}
+		.column-left {
+			float: left;
+			width: 50%;
+		}
+		.column-right {
+			float: left;
+			width: 50%;
+		}
+		h1,
+		h2,
+		h3 {
+			font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+			color: #000;
+			margin: 40px 0 0;
+			line-height: 1.2;
+			font-weight: 400;
+		}
+		h1 {
+			font-size: 32px;
+			font-weight: 500;
+		}
+		h2 {
+			font-size: 24px;
+		}
+		h3 {
+			font-size: 18px;
+		}
+		h4 {
+			font-size: 14px;
+			font-weight: 600;
+		}
+		p,
+		ul,
+		ol {
+			margin-bottom: 10px;
+			font-weight: normal;
+		}
+		p li,
+		ul li,
+		ol li {
+			margin-left: 5px;
+			list-style-position: inside;
+		}
+		a {
+			color: #348eda;
+			text-decoration: underline;
+		}
+		.btn-primary {
+			text-decoration: none;
+			color: #FFF;
+			background-color: #348eda;
+			border: solid #348eda;
+			border-width: 5px 20px;
+			line-height: 2;
+			font-weight: bold;
+			text-align: center;
+			cursor: pointer;
+			display: inline-block;
+			border-radius: 5px;
+			text-transform: capitalize;
+		}
+		.last {
+			margin-bottom: 0;
+		}
+		.first {
+			margin-top: 0;
+		}
+		.padding {
+			padding: 10px 0;
+		}
+		.aligncenter {
+			text-align: center;
+		}
+		.alignright {
+			text-align: right;
+		}
+		.alignleft {
+			text-align: left;
+		}
+		.clear {
+			clear: both;
+		}
+		.alert {
+			font-size: 16px;
+			color: #fff;
+			font-weight: 500;
+			padding: 20px;
+			text-align: center;
+			border-radius: 3px 3px 0 0;
+		}
+		.alert a {
+			color: #fff;
+			text-decoration: none;
+			font-weight: 500;
+			font-size: 16px;
+		}
+		.alert.alert-warning {
+			background: #ff9f00;
+		}
+		.alert.alert-bad {
+			background: #d0021b;
+		}
+		.alert.alert-good {
+			background: #68b90f;
+		}
+		.invoice {
+			margin: 40px auto;
+			text-align: left;
+			width: 80%;
+		}
+		.invoice td {
+			padding: 5px 0;
+		}
+		.invoice .invoice-items {
+			width: 100%;
+		}
+		.invoice .invoice-items td {
+			border-top: #eee 1px solid;
+		}
+		.invoice .invoice-items .total td {
+			border-top: 2px solid #333;
+			border-bottom: 2px solid #333;
+			font-weight: 700;
+		}
+		@media only screen and (max-width: 640px) {
+			h1, h2, h3, h4 {
+				font-weight: 600 !important;
+				margin: 20px 0 5px !important;
+			}
+			h1 {
+				font-size: 22px !important;
+			}
+			h2 {
+				font-size: 18px !important;
+			}
+			h3 {
+				font-size: 16px !important;
+			}
+			.container {
+				width: 100% !important;
+			}
+			.content,
+			.content-wrapper {
+				padding: 10px !important;
+			}
+			h3 {
+				font-size: 32px!important;
+				font-weight: bold!important;
+				margin-top: 0px!important;
+			}
+			.invoice {
+				width: 100% !important;
+			}
+            .header-shadow{
+                box-shadow: 0 2px 4px rgba(0,0,0,0.2), 0 -1px 0px rgba(0,0,0,0.02);
+            }
+		}
+
+</style>
+</head>
+
+<body>
+        <div class="wrapper">
+            <div class="wrapper-inner">
+              
+                    <table class="body-wrap main-table-first">
+                            <tr>
+                                <td></td>
+                                <td class="container" width="600">
+                                    <div class="main">
+                                        <table>
+                                            <td></td>
+                                            <td></td>
+                                        </table>
+                                            <div>
+                                                    <table style="background-color:#01579b; box-shadow: 0 2px 4px rgba(0,0,0,0.2), 0 -1px 0px rgba(0,0,0,0.02)">
+                                                        <tr>
+                                                            <td style="width:89%; font-size:1.8em; color:#fff;padding-top:8px">RMS2</td>
+                                                            <td>
+                                                                <table>
+                                                                    <tr>
+                                                                        <td style="font-size:1.8em; color:#fff;">Shop</td>
+                                                                        <td ><img src="https://rmsdev.emht.com/appapi/img/cart-35.png" alt="Cart"></td>
+                                                                    </tr>
+                                                                </table>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </div>
+                                        <table width="100%">
+                                                <tr><td><h2 style="padding:10px 25px; margin:0; font-weight:bold; text-align:center">Plans Emailed Receipt</h2></td></tr>
+                                                <tr><td><h3 style="padding:10px 25px; margin:0; font-weight:bold; text-align:center"> Thank you for your Order </h3></td></tr>
+                                        </table>
+
+                                        
+
+                                        <table width="100%" cellpadding="0" cellspacing="0">
+                                            
+                                            <tr>
+                                                <td>
+                                                    <div style="margin:10px 20px">
+                                                            <table style="background-color:#ddd; width:100%">
+                                                                    <tr style=>
+                                                                        <td style="width:80%"><span style="font-size:1.2em">Order Confirmation #</span> </td>
+                                                                        <td style="text-align:right; width:10%"><span style="text-align:right; font-size:1.2em;"><%orderConfirmationID%></span></td>
+                                                                    </tr>
+                                                                </table>
+                                                    </div>
+                                                    <div >
+                                                            <table style="margin:0 20px;">
+                                                                <%fileNameRows%>
+                                                                <tr style="border-top:1px solid #999">
+                                                                        <td style="width:80%"><span style="font-size:1.1em; font-weight:bold">TOTAL</span> </td>
+                                                                        <td style="text-align:right; width:14%"><span style="text-align:right; font-size:1.2em;font-weight:bold"><%totalFiles%></span></td>
+                                                                    </tr>
+                                                                </table>
+                                                    </div>
+                                                    
+                                                    <div style="margin:10px 20px;">
+                                                            <table style="background-color:#ddd;width:100%">
+                                                                    <tr style=>
+                                                                        <td style="width:80%"><span style="font-size:1.2em">Delivered Address on <%orderDateTime%></span> </td>
+                                                                        <td style="text-align:right; width:10%"><span style="text-align:right; font-size:1.2em;"></span></td>
+                                                                    </tr>
+                                                                </table>
+                                                    </div>
+                                                    <div >
+                                                            <table style="margin:0 20px;">
+                                                                <%emailReceiverRows%>
+                                                                </table>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            
+                                            <tr>
+                                                <td class="content-wrap">
+                                                    <table width="100%" cellpadding="0" cellspacing="0">
+                                                        
+                                                        <tr style="text-align:center">
+                                                            <td class="content-block"><p style='margin:1em 0 0 0; padding:0; font-size:0.95em; color:#999999; font-style:italic; '>This is a system generated email notice. Any emails or replys to this message will not be answered.</p></td>
+                                                        </tr>
+                                                        <tr style="text-align:center;">
+                                                            <td class="content-block"> <a class="btn-primary" href="https://rms.mansfieldcity.com/">Visite the RMS site</a> 
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    
+                                    </div>
+                                </td>
+                                <td></td>
+                            </tr>
+                        </table>
+            </div>
+        </div>
+</body>
+
+</html>
